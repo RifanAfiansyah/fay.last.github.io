@@ -58,7 +58,7 @@
         "backend": "tensor_flow.js"
     },
     "weightsManifest": [{
-        "paths": ["modelv2/model.weights2.bin"],
+        "paths": ["model/model.weights.bin"],
         "weights": [{
                 "name": "dense_Dense1/kernel",
                 "shape": [34, 16],

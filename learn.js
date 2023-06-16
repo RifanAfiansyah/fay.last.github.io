@@ -5,7 +5,7 @@ let skeleton;
 let thirtysecs;
 // let posesArray = ["Mountain", "Tree", "Chair", "Triangle", "Warrior II"];
 let posesArray = [
-    "Tree",
+    "Mountain",
     "Tree",
     "Downward Dog",
     "Warrior I",
@@ -47,7 +47,7 @@ function setup() {
     // imgArray[4].src = "gyoga/warrior2.svg";
 
     imgArray[0] = new Image();
-    imgArray[0].src = "gyoga/tree.svg";
+    imgArray[0].src = "gyoga/dog.svg";
     imgArray[1] = new Image();
     imgArray[1].src = "gyoga/tree.svg";
     imgArray[2] = new Image();
