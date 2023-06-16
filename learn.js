@@ -5,12 +5,12 @@ let skeleton;
 let thirtysecs;
 // let posesArray = ["Mountain", "Tree", "Chair", "Triangle", "Warrior II"];
 let posesArray = [
-    "Tree",
     "Mountain",
-    "Chair",
+    "Tree",
+    "Downward Dog",
     "Warrior I",
     "Warrior II",
-    "Triangle",
+    "Tree",
 ];
 var imgArray = new Array();
 
@@ -47,9 +47,9 @@ function setup() {
     // imgArray[4].src = "gyoga/warrior2.svg";
 
     imgArray[0] = new Image();
-    imgArray[0].src = "gyoga/dog.svg";
+    imgArray[0].src = "gyoga/mountain.svg";
     imgArray[1] = new Image();
-    imgArray[1].src = "gyoga/mountain.svg";
+    imgArray[1].src = "gyoga/tree.svg";
     imgArray[2] = new Image();
     imgArray[2].src = "gyoga/dog.svg";
     imgArray[3] = new Image();
@@ -57,7 +57,7 @@ function setup() {
     imgArray[4] = new Image();
     imgArray[4].src = "gyoga/warrior2.svg";
     imgArray[5] = new Image();
-    imgArray[5].src = "gyoga/triangle.svg";
+    imgArray[5].src = "gyoga/chair.svg";
 
     poseCounter = 0;
     targetLabel = 1;
@@ -82,9 +82,9 @@ function setup() {
         // model: "model/model.json",
         // metadata: "model/model_meta.json",
         // weights: "model/model.weights.bin",
-        model: "model3/model.json",
-        metadata: "model3/model_meta.json",
-        weights: "model3/model.weights.bin",
+        model: "modelv2/model2.json",
+        metadata: "modev2/model_meta2.json",
+        weights: "modelv2/model.weights2.bin",
     };
     yogi.load(modelInfo, yogiLoaded);
 }
