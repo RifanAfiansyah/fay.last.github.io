@@ -47,7 +47,7 @@ function setup() {
     // imgArray[4].src = "gyoga/warrior2.svg";
 
     imgArray[0] = new Image();
-    imgArray[0].src = "gyoga/tree.svg";
+    imgArray[0].src = "gyoga/dog.svg";
     imgArray[1] = new Image();
     imgArray[1].src = "gyoga/mountain.svg";
     imgArray[2] = new Image();
@@ -82,7 +82,7 @@ function setup() {
         // model: "model/model.json",
         // metadata: "model/model_meta.json",
         // weights: "model/model.weights.bin",
-        model: "modelv3/model.json",
+        model: "model3/model.json",
         metadata: "model3/model_meta.json",
         weights: "model3/model.weights.bin",
     };
