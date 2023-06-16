@@ -5,12 +5,12 @@ let skeleton;
 let thirtysecs;
 // let posesArray = ["Mountain", "Tree", "Chair", "Triangle", "Warrior II"];
 let posesArray = [
-    "Mountain",
     "Tree",
-    "Downward Dog",
+    "Mountain",
+    "Chair",
     "Warrior I",
     "Warrior II",
-    "Chair",
+    "Triangle",
 ];
 var imgArray = new Array();
 
@@ -47,9 +47,9 @@ function setup() {
     // imgArray[4].src = "gyoga/warrior2.svg";
 
     imgArray[0] = new Image();
-    imgArray[0].src = "gyoga/dog.svg";
+    imgArray[0].src = "gyoga/tree.svg";
     imgArray[1] = new Image();
-    imgArray[1].src = "gyoga/tree.svg";
+    imgArray[1].src = "gyoga/mountain.svg";
     imgArray[2] = new Image();
     imgArray[2].src = "gyoga/dog.svg";
     imgArray[3] = new Image();
@@ -57,7 +57,7 @@ function setup() {
     imgArray[4] = new Image();
     imgArray[4].src = "gyoga/warrior2.svg";
     imgArray[5] = new Image();
-    imgArray[5].src = "gyoga/chair.svg";
+    imgArray[5].src = "gyoga/triangle.svg";
 
     poseCounter = 0;
     targetLabel = 1;
@@ -82,9 +82,9 @@ function setup() {
         // model: "model/model.json",
         // metadata: "model/model_meta.json",
         // weights: "model/model.weights.bin",
-        model: "modelv2/model2.json",
-        metadata: "modelv2/model_meta2.json",
-        weights: "modelv2/model.weights2.bin",
+        model: "modelv3/model.json",
+        metadata: "model3/model_meta.json",
+        weights: "model3/model.weights.bin",
     };
     yogi.load(modelInfo, yogiLoaded);
 }
@@ -181,7 +181,7 @@ function draw() {
         for (let i = 0; i < skeleton.length; i++) {
             let a = skeleton[i][0];
             let b = skeleton[i][1];
-            strokeWeight(8);
+            strokeWeight(6);
             stroke(244, 194, 194);
             line(a.position.x, a.position.y, b.position.x, b.position.y);
         }
@@ -190,7 +190,7 @@ function draw() {
 }
 
 function nextPose() {
-    if (poseCounter >= 8) {
+    if (poseCounter >= 6) {
         console.log("Well done, you have learnt all poses!");
         document.getElementById("finish").textContent = "Mantap!";
         document.getElementById("welldone").textContent = "Semua pose selesai";
