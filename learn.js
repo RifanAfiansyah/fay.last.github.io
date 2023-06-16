@@ -83,7 +83,7 @@ function setup() {
         // metadata: "model/model_meta.json",
         // weights: "model/model.weights.bin",
         model: "modelv2/model2.json",
-        metadata: "modev2/model_meta2.json",
+        metadata: "modelv2/model_meta2.json",
         weights: "modelv2/model.weights2.bin",
     };
     yogi.load(modelInfo, yogiLoaded);
